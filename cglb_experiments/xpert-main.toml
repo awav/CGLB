@@ -1,0 +1,21 @@
+cmd = 'python cli.py --keops -b {backend} -l "{uid}" -s {seed} -t {float} train -n {num_steps} -d {dataset}'
+
+[[exp]]
+cmd = '{cmd} sgpr -k {kernel} -m {model} -i ConditionalVariance -M {num_ips}'
+uid = './{rootdir}/keops/{dataset}/{model}-{kernel}-{num_ips}-{float}/{seed}'
+
+backend = "torch"
+float = "fp64"
+rootdir = "logs"
+num_steps = 2000
+kernel = "Matern32"
+model = "cglb"
+seed = [999, 888, 777]
+dataset = ["Wilson_bike", "Wilson_kin40k", "Wilson_elevators", "Wilson_pol", "Wilson_protein", "Wilson_keggundirected"]
+num_ips = [128, 256, 512, 1024, 2048, 4096]
+
+
+[flags]
+restart = false
+num_proc = 2
+gpu_indices = ["0", "1"]

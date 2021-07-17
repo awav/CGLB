@@ -1,0 +1,16 @@
+sklearn
+pykeops
+openpyxl
+xlsxwriter
+click
+json_tricks
+observations
+bayesian_benchmarks
+tensorflow>2.2.0
+tensorflow-probability>0.10.0
+torch
+gpytorch
+gpflow>2.0
+cloudpickle==1.3.0
+git+https://github.com/markvdw/RobustGP.git
+git+https://github.com/awav/xpert.git
