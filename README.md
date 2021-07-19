@@ -14,9 +14,32 @@ The repo has two version of CGLB model:
 
 ### CGLB experiments
 
-We base our command line interface on [click](https://pypi.org/project/click), and with [xpert](https://github.com/awav/xpert) manage multiple experiment runs on different GPUs.
+The command line interface is based on [click](https://pypi.org/project/click), and with [xpert](https://github.com/awav/xpert) experiment manager you can run and organize many experiments on different GPUs (or CPU).
 
 You can find the full list of requirements at `requirements.txt`.
+
+
+Install (develop):
+
+```
+$ pip install -r requirements.txt
+$ pip install -e .
+```
+
+
+### Run experiments
+
+with CLI:
+
+```
+$ python cli.py --keops -b torch -l "./logs" -s 0 -t fp64 train -n 2000 -d snelson1d cglb -k Matern32 -m cglb -i ConditionalVariance -M 1024
+```
+
+with `xpert`:
+
+```
+$ xpert xpert-main.toml
+```
 
 
 ## Cite
