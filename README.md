@@ -1,6 +1,6 @@
-# CGLB
+# Conjugate Gradient Lower Bound (CGLB)
 
-Conjugate Gradient Lower Bound
+An implementation of the `conjugate gradient lower bound` method described in [Tighter bounds on the log Marginal likelihood of Gaussian Process regression](https://arxiv.org/abs/2102.08314). This method can be used for scalable hyperparameter selection for Gaussian process regression models with Gaussian likelihood using approximate Empirical Bayes'.
 
 
 ## Installation
