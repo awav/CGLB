@@ -48,7 +48,7 @@ from ..config import (
 from .conjugate_gradient import ConjugateGradient
 from .lbfgs import FullBatchLBFGS
 from .models import CGLB, GPR, SGPR, LowerBoundCG, PredictCG, log_density
-from .scipy import Scipy
+from .optimizer import Scipy
 
 __USE_KEOPS__ = True
 

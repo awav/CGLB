@@ -13,7 +13,7 @@
 # limitations under the License.
 
 import numpy as np
-import scipy.optimize
+import scipy
 import torch
 
 

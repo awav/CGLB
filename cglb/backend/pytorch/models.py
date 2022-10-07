@@ -12,7 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from gpflow.monitor.tensorboard import ToTensorBoard
 from cglb.backend.pytorch.conjugate_gradient import ConjugateGradient
 from dataclasses import dataclass
 from typing import Tuple, Union, Optional
